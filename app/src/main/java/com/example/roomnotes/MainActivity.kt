@@ -66,7 +66,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// --- BAGIAN 1: NoteScreen (Dipindah ke sini sesuai PDF) ---
+
 @Composable
 fun NoteScreen(vm: NoteViewModel) {
     val notes by vm.notes.collectAsState()
@@ -157,7 +157,6 @@ fun NoteScreen(vm: NoteViewModel) {
     }
 }
 
-// --- BAGIAN 2: NoteItem (Dipindah ke sini sesuai PDF) ---
 @Composable
 fun NoteItem(note: Note, onClick: () -> Unit, onDelete: () -> Unit) {
     Card(
